@@ -1,0 +1,73 @@
+Script started on Thu 16 Dec 2021 03:27:33 PM PST
+]0;tobin014@empress:~/cs421/hw/ProjectB[?1034h[tobin014@empress ProjectB]$ exg++ -o group2parserout parser.cscanner.cp[1@.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1[1[1[1[1[1[1P[1@p[1@a[1@r[1@s[1@e[1@r[C[C[C[C[C
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
+Group 2: Christian Tobin, Issac Ferrel, Willy Chien
+
+Enter the input file name: partBtes1
+Scanner called using word ""
+matched WORD1
+Scanner called using word ""
+SYNTAX ERROR: expected SUBJECT, but found 
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
+Group 2: Christian Tobin, Issac Ferrel, Willy Chien
+
+Enter the input file name: partBtest2
+Scanner called using word "soshite"
+matched CONNECTOR
+Scanner called using word "watashi"
+matched PRONOUN
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "rika"
+matched WORD1
+Scanner called using word "desu"
+matched IS
+Scanner called using word "ne"
+SYNTAX ERROR: expected PERIOD, but found ne
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ls
+[0m[01;32mgroup2parserout[0m   parser.h        partBtest2  partBtest5   scanner.h
+[01;32mgroup2parser.out[0m  parserWork.txt  partBtest3  partBtest6   ,Test2.txt
+parser.cpp        partBtest1      partBtest4  [01;32mscanner.cpp[0m
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
+Group 2: Christian Tobin, Issac Ferrel, Willy Chien
+
+Enter the input file name: partBtest3
+Scanner called using word "dakara"
+matched CONNECTOR
+Scanner called using word "watashi"
+matched PRONOUN
+Scanner called using word "de"
+SYNTAX ERROR: expected SUBJECT, but found de
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
+Group 2: Christian Tobin, Issac Ferrel, Willy Chien
+
+Enter the input file name: partBtest4
+Scanner called using word "watashi"
+matched PRONOUN
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "rika"
+matched WORD1
+Scanner called using word "mashita"
+SYNTAX ERROR: unexpected mashita, found in after_noun
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
+Group 2: Christian Tobin, Issac Ferrel, Willy Chien
+
+Enter the input file name: partBtest5
+Scanner called using word "wa"
+SYNTAX ERROR: unexpected wa, found in noun
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
+Group 2: Christian Tobin, Issac Ferrel, Willy Chien
+
+Enter the input file name: partBtest6
+Lexical error: 'apple' is not a valid token
+Scanner called using word "apple"
+SYNTAX ERROR: unexpected apple, found in noun
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ls
+[0m[01;32mgroup2parserout[0m   parser.h        partBtest2  partBtest5   scanner.h
+[01;32mgroup2parser.out[0m  parserWork.txt  partBtest3  partBtest6   ,Test2.txt
+parser.cpp        partBtest1      partBtest4  [01;32mscanner.cpp[0m
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ exit
+exit
+
+Script done on Thu 16 Dec 2021 03:29:04 PM PST
