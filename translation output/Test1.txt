@@ -1,0 +1,152 @@
+Script started on Thu 16 Dec 2021 04:24:05 PM PST
+]0;tobin014@empress:~/cs421/hw/TranslatorFiles[?1034h[tobin014@empress TranslatorFiles]$ cat translated.txt
+ACTOR I/me
+DESCRIPTION rika
+TENSE IS
+
+ACTOR I/me
+DESCRIPTION teacher
+TENSE IS
+
+ACTOR rika
+OBJECT meal
+ACTION eat
+TENSE VERB
+
+ACTOR I/me
+OBJECT test
+TO student
+ACTION give
+TENSE VERBPAST
+
+CONNECTOR However
+ACTOR student
+ACTION enjoy
+TENSE VERBPASTNEG
+
+CONNECTOR Therefore
+ACTOR I/me
+DESCRIPTION sad
+TENSE WAS
+
+CONNECTOR Then
+ACTOR rika
+TO restroom
+ACTION go
+TENSE VERBPAST
+
+ACTOR rika
+ACTION cry
+TENSE VERBPAST
+
+]0;tobin014@empress:~/cs421/hw/TranslatorFiles[tobin014@empress TranslatorFiles]$ g++ -std=c++11 translator.cpp
+]0;tobin014@empress:~/cs421/hw/TranslatorFiles[tobin014@empress TranslatorFiles]$ ./a.out 
+Enter the input file name: partCtest1
+Scanner called using word "watashi"
+matched PRONOUN
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "rika"
+matched WORD1
+Scanner called using word "desu"
+matched IS
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "watashi"
+matched PRONOUN
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "sensei"
+matched WORD1
+Scanner called using word "desu"
+matched IS
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "rika"
+matched WORD1
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "gohan"
+matched WORD1
+Scanner called using word "o"
+matched OBJECT
+Scanner called using word "tabE"
+matched WORD2
+Scanner called using word "masu"
+matched VERB
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "watashi"
+matched PRONOUN
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "tesuto"
+matched WORD1
+Scanner called using word "o"
+matched OBJECT
+Scanner called using word "seito"
+matched WORD1
+Scanner called using word "ni"
+matched DESTINATION
+Scanner called using word "agE"
+matched WORD2
+Scanner called using word "mashita"
+matched VERBPAST
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "shikashi"
+matched CONNECTOR
+Scanner called using word "seito"
+matched WORD1
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "yorokobI"
+matched WORD2
+Scanner called using word "masendeshita"
+matched VERBPASTNEG
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "dakara"
+matched CONNECTOR
+Scanner called using word "watashi"
+matched PRONOUN
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "kanashii"
+matched WORD1
+Scanner called using word "deshita"
+matched WAS
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "soshite"
+matched CONNECTOR
+Scanner called using word "rika"
+matched WORD1
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "toire"
+matched WORD1
+Scanner called using word "ni"
+matched DESTINATION
+Scanner called using word "ikI"
+matched WORD2
+Scanner called using word "mashita"
+matched VERBPAST
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "rika"
+matched WORD1
+Scanner called using word "wa"
+matched SUBJECT
+Scanner called using word "nakI"
+matched WORD2
+Scanner called using word "mashita"
+matched VERBPAST
+Scanner called using word "."
+matched PERIOD
+Scanner called using word "eofm"
+Successfully parsed <story>.
+]0;tobin014@empress:~/cs421/hw/TranslatorFiles[tobin014@empress TranslatorFiles]$ exit
+exit
+
+Script done on Thu 16 Dec 2021 04:24:39 PM PST
