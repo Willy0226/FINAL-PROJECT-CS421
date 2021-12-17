@@ -1,73 +1,193 @@
-Script started on Thu 16 Dec 2021 03:27:33 PM PST
-]0;tobin014@empress:~/cs421/hw/ProjectB[?1034h[tobin014@empress ProjectB]$ exg++ -o group2parserout parser.cscanner.cp[1@.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1[1[1[1[1[1[1P[1@p[1@a[1@r[1@s[1@e[1@r[C[C[C[C[C
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
-Group 2: Christian Tobin, Issac Ferrel, Willy Chien
-
-Enter the input file name: partBtes1
-Scanner called using word ""
-matched WORD1
-Scanner called using word ""
-SYNTAX ERROR: expected SUBJECT, but found 
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
-Group 2: Christian Tobin, Issac Ferrel, Willy Chien
-
-Enter the input file name: partBtest2
-Scanner called using word "soshite"
-matched CONNECTOR
-Scanner called using word "watashi"
-matched PRONOUN
-Scanner called using word "wa"
-matched SUBJECT
-Scanner called using word "rika"
-matched WORD1
-Scanner called using word "desu"
-matched IS
-Scanner called using word "ne"
-SYNTAX ERROR: expected PERIOD, but found ne
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ls
-[0m[01;32mgroup2parserout[0m   parser.h        partBtest2  partBtest5   scanner.h
-[01;32mgroup2parser.out[0m  parserWork.txt  partBtest3  partBtest6   ,Test2.txt
-parser.cpp        partBtest1      partBtest4  [01;32mscanner.cpp[0m
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
-Group 2: Christian Tobin, Issac Ferrel, Willy Chien
-
-Enter the input file name: partBtest3
-Scanner called using word "dakara"
-matched CONNECTOR
-Scanner called using word "watashi"
-matched PRONOUN
-Scanner called using word "de"
-SYNTAX ERROR: expected SUBJECT, but found de
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
-Group 2: Christian Tobin, Issac Ferrel, Willy Chien
-
-Enter the input file name: partBtest4
-Scanner called using word "watashi"
-matched PRONOUN
-Scanner called using word "wa"
-matched SUBJECT
-Scanner called using word "rika"
-matched WORD1
-Scanner called using word "mashita"
-SYNTAX ERROR: unexpected mashita, found in after_noun
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
-Group 2: Christian Tobin, Issac Ferrel, Willy Chien
-
-Enter the input file name: partBtest5
-Scanner called using word "wa"
-SYNTAX ERROR: unexpected wa, found in noun
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./group2parser.out
-Group 2: Christian Tobin, Issac Ferrel, Willy Chien
-
-Enter the input file name: partBtest6
-Lexical error: 'apple' is not a valid token
-Scanner called using word "apple"
-SYNTAX ERROR: unexpected apple, found in noun
-]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ls
-[0m[01;32mgroup2parserout[0m   parser.h        partBtest2  partBtest5   scanner.h
-[01;32mgroup2parser.out[0m  parserWork.txt  partBtest3  partBtest6   ,Test2.txt
-parser.cpp        partBtest1      partBtest4  [01;32mscanner.cpp[0m
+Script started on Thu 16 Dec 2021 04:21:20 PM PST
+]0;tobin014@empress:~/cs421/hw/ProjectB[?1034h[tobin014@empress ProjectB]$ g++ scanner.cpp
+]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ ./a.out 
+Enter the input file name: scannertest2
+Type is:WORD1
+Word is:daigaku
+Lexical error: 'college' is not a valid token
+Type is:ERROR
+Word is:college
+Type is:WORD1
+Word is:kurasu
+Lexical error: 'class' is not a valid token
+Type is:ERROR
+Word is:class
+Type is:WORD1
+Word is:hon
+Lexical error: 'book' is not a valid token
+Type is:ERROR
+Word is:book
+Type is:WORD1
+Word is:tesuto
+Lexical error: 'test' is not a valid token
+Type is:ERROR
+Word is:test
+Type is:WORD1
+Word is:ie
+Lexical error: 'home*' is not a valid token
+Type is:ERROR
+Word is:home*
+Type is:WORD1
+Word is:isu
+Lexical error: 'chair' is not a valid token
+Type is:ERROR
+Word is:chair
+Type is:WORD1
+Word is:seito
+Lexical error: 'student' is not a valid token
+Type is:ERROR
+Word is:student
+Type is:WORD1
+Word is:sensei
+Lexical error: 'teacher' is not a valid token
+Type is:ERROR
+Word is:teacher
+Type is:WORD1
+Word is:tomodachi
+Lexical error: 'friend' is not a valid token
+Type is:ERROR
+Word is:friend
+Type is:WORD1
+Word is:jidoosha
+Lexical error: 'car' is not a valid token
+Type is:ERROR
+Word is:car
+Type is:WORD1
+Word is:gyuunyuu
+Lexical error: 'milk' is not a valid token
+Type is:ERROR
+Word is:milk
+Type is:WORD1
+Word is:sukiyaki
+Type is:WORD1
+Word is:tenpura
+Type is:WORD1
+Word is:sushi
+Type is:WORD1
+Word is:biiru
+Lexical error: 'beer' is not a valid token
+Type is:ERROR
+Word is:beer
+Type is:WORD1
+Word is:sake
+Type is:WORD1
+Word is:tokyo
+Type is:WORD1
+Word is:kyuushuu
+Lexical error: 'Osaka' is not a valid token
+Type is:ERROR
+Word is:Osaka
+Type is:WORD1
+Word is:choucho
+Lexical error: 'butterfly' is not a valid token
+Type is:ERROR
+Word is:butterfly
+Type is:WORD1
+Word is:an
+Type is:WORD1
+Word is:idea
+Type is:WORD1
+Word is:yasashii
+Lexical error: 'easy' is not a valid token
+Type is:ERROR
+Word is:easy
+Type is:WORD1
+Word is:muzukashii
+Lexical error: 'difficult' is not a valid token
+Type is:ERROR
+Word is:difficult
+Type is:WORD1
+Word is:ureshii
+Lexical error: 'pleased' is not a valid token
+Type is:ERROR
+Word is:pleased
+Type is:WORD1
+Word is:shiawase
+Lexical error: 'happy' is not a valid token
+Type is:ERROR
+Word is:happy
+Type is:WORD1
+Word is:kanashii
+Lexical error: 'sad' is not a valid token
+Type is:ERROR
+Word is:sad
+Type is:WORD1
+Word is:omoi
+Lexical error: 'heavy' is not a valid token
+Type is:ERROR
+Word is:heavy
+Type is:WORD1
+Word is:oishii
+Lexical error: 'delicious' is not a valid token
+Type is:ERROR
+Word is:delicious
+Type is:WORD1
+Word is:tennen
+Lexical error: 'natural' is not a valid token
+Type is:ERROR
+Word is:natural
+Type is:WORD2
+Word is:nakI
+Lexical error: 'cry' is not a valid token
+Type is:ERROR
+Word is:cry
+Type is:WORD2
+Word is:ikI
+Lexical error: 'go*' is not a valid token
+Type is:ERROR
+Word is:go*
+Type is:WORD2
+Word is:tabE
+Lexical error: 'eat' is not a valid token
+Type is:ERROR
+Word is:eat
+Type is:WORD2
+Word is:ukE
+Lexical error: 'take*' is not a valid token
+Type is:ERROR
+Word is:take*
+Type is:WORD2
+Word is:kakI
+Lexical error: 'write' is not a valid token
+Type is:ERROR
+Word is:write
+Type is:WORD2
+Word is:yomI
+Lexical error: 'read' is not a valid token
+Type is:ERROR
+Word is:read
+Type is:WORD2
+Word is:nomI
+Lexical error: 'drink' is not a valid token
+Type is:ERROR
+Word is:drink
+Type is:WORD2
+Word is:agE
+Lexical error: 'give' is not a valid token
+Type is:ERROR
+Word is:give
+Type is:WORD2
+Word is:moraI
+Lexical error: 'receive' is not a valid token
+Type is:ERROR
+Word is:receive
+Type is:WORD2
+Word is:butsI
+Lexical error: 'hit' is not a valid token
+Type is:ERROR
+Word is:hit
+Type is:WORD2
+Word is:kerI
+Lexical error: 'kick' is not a valid token
+Type is:ERROR
+Word is:kick
+Type is:WORD2
+Word is:shaberI
+Lexical error: 'talk' is not a valid token
+Type is:ERROR
+Word is:talk
+End of file is encountered.
 ]0;tobin014@empress:~/cs421/hw/ProjectB[tobin014@empress ProjectB]$ exit
 exit
 
-Script done on Thu 16 Dec 2021 03:29:04 PM PST
+Script done on Thu 16 Dec 2021 04:21:37 PM PST
