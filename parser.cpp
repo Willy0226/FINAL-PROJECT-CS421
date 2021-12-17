@@ -37,7 +37,7 @@ string saved_E_word; //this is the saved english word
 
 unordered_map<string, string> lexicon; //to store the definitions of japanese to english from lexcion.txt
 
-ofstream file("traslated.txt"); //file where will send our output
+ofstream file("translated.txt"); //file where will send our output
 //ofstream translation= "translation.txt";
 // ----- Four Utility Functions and Globals -----------------------------------
 
