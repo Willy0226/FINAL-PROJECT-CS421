@@ -1,6 +1,6 @@
-#include<iostream>
-#include<fstream>
-#include<string>
+#include <iostream>
+#include <fstream>
+#include <string>
 #include "parser.cpp"
 using namespace std;
 
@@ -18,13 +18,12 @@ using namespace std;
 
 // ** Declare Lexicon (i.e. dictionary) that will hold the content of lexicon.txt
 // Make sure it is easy and fast to look up the translation.
-// Do not change the format or content of lexicon.txt 
+// Do not change the format or content of lexicon.txt
 //  Done by: Issac Ferrel
-
 
 // ** Additions to parser.cpp here:
 //    getEword() - using the current saved_lexeme, look up the English word
-//                 in Lexicon if it is there -- save the result   
+//                 in Lexicon if it is there -- save the result
 //                 in saved_E_word
 //  Done by: Issac Ferrel
 //    gen(line_type) - using the line type,
@@ -34,13 +33,12 @@ using namespace std;
 
 // ----- Changes to the parser.cpp content ---------------------
 
-// ** Comment update: Be sure to put the corresponding grammar 
+// ** Comment update: Be sure to put the corresponding grammar
 //    rule with semantic routine calls
-//    above each non-terminal function 
+//    above each non-terminal function
 
 // ** Each non-terminal function should be calling
 //    getEword and/or gen now.
-
 
 // ---------------- Driver ---------------------------
 
@@ -51,26 +49,25 @@ int main()
   //necessary do not delete look at setup_table for details.
   setup_table();
   //** opens the lexicon.txt file and reads it into Lexicon
-  translations();
-  //** closes lexicon.txt 
+  dictionary();
+  //** closes lexicon.txt
   //** opens the output file translated.txt
-  
+
   cout << "Enter the input file name: ";
   string filename;
   cin >> filename;
   fin.open(filename.c_str());
-  
+
   //** calls the <story> to start parsing
   //** calls the <story> to start parsing
   story();
   cout << "Successfully parsed <story>." << endl;
   //** closes the input file
   fin.close();
-  //** closes the input file 
+  //** closes the input file
   //** closes traslated.txt
- 
-}// end
+
+} // end
 //** require no other input files!
 //** syntax error EC requires producing errors.txt of error messages
 //** tracing On/Off EC requires sending a flag to trace message output functions
-
